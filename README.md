@@ -43,13 +43,6 @@
 └── README.md
 ```
 
-## 🔒 安全说明
-
-**重要：本项目不会将API密钥上传到GitHub**
-
-- `.env` 文件已添加到 `.gitignore`
-- 只上传 `.env.example` 作为模板
-- 你需要在本地创建自己的 `.env` 文件并填入API密钥
 
 ## 快速开始
 
@@ -102,8 +95,6 @@ PORT=3001
 # GLM API端点
 GLM_API_URL=https://open.bigmodel.cn/api/paas/v4/chat/completions
 ```
-
-⚠️ **千万不要将 `.env` 文件上传到GitHub或分享给他人！**
 
 ### 4. 启动服务
 
@@ -188,25 +179,6 @@ npm run dev
 - Express 提供 REST API
 - GLM API 调用AI服务
 - CORS 跨域支持
-
-## 常见问题
-
-**Q: API密钥会泄露吗？**
-A: 不会。`.env` 文件已添加到 `.gitignore`，不会被上传到GitHub。
-
-**Q: 如何更换不同的AI服务？**
-A: 修改 `backend/services/glmService.js` 中的API调用逻辑。
-
-**Q: 可以离线使用吗？**
-A: 不行。需要调用在线的AI服务来生成标题。
-
-## 贡献
-
-欢迎提交 Issue 和 Pull Request！
-
-## License
-
-MIT
 
 ## 免责声明
 
